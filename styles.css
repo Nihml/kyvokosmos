@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden; /* Προσθήκη για να αφαιρέσουμε το κενό στα δεξιά */
 }
 
 header {
@@ -114,7 +115,7 @@ footer {
     }
 
     nav ul {
-        display: none;
+        display: none; /* Κρύψιμο του μενού */
     }
 
     section {
@@ -126,4 +127,10 @@ footer {
     .server-ip {
         font-size: 1rem;
     }
+}
+
+/* Πρόσθετο στυλ για να αφαιρέσουμε το κενό στα δεξιά */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
